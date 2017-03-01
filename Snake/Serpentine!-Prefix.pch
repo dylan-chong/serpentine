@@ -1,0 +1,97 @@
+//
+// Prefix header for all source files of the 'Snake' target in the 'Snake' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+//******************************************* General Stuff ****************************************
+//game options
+#define obstacleKey @"obstacleKey"
+#define borderKey @"borderKey"
+#define powerUpKey @"powerUpKey"
+#define ruinsKey @"ruinsKey"
+#define enemyKey @"enemyKey"
+#define snakeSpeedDefaultKey @"snakeSpeedDefaultKey"
+
+#define cheatingThreshold 1000000
+
+//random statistics
+#define cashKey @"cashKey"
+#define nameKey @"nameKey"
+#define highScoreKey @"highScoreKey"
+#define firstTimeAppLoadedKey @"firstTimeAppLoadedKey"
+
+#define willSkipTutorial @"willSkipTutorial"
+#define lastDateShownFullScreenAdOnMainScreen @"lastDateShownFullScreenAdOnMainScreen"
+
+//prompts
+#define hasAskedAboutPurchasingObstacles @"hasAskedAboutPurchasingObstacles"
+#define hasAskedAboutFacebook @"hasAskedAboutFacebook"
+#define hasAskedAboutRating @"hasAskedAboutRating"
+
+//******************************************* Achievements *****************************************
+//achivement names
+
+//statistics
+#define stepsKey @"stepsKey"
+#define foodEatenKey @"foodEatenKey"
+#define enemiesEatenKey @"enemiesEatenKey"
+#define hitsByBulletKey @"hitsByBulletKey"
+#define powerUpsEatenKey @"powerUpsEatenKey"
+#define deathsByObstacleKey @"deathsByObstacleKey"
+#define deathsBySelfKey @"deathsBySelfKey"
+#define cashEarnedKey @"cashEarnedKey"
+#define gamesPlayedKey @"gamesPlayedKey"
+
+#define lastSubmittedScore @"lastSubmittedScore"
+
+//********************************************** Shop **********************************************
+
+//used as NSUserDefault key
+#define adsPurchased @"ap"
+#define obstacleBorderPurchased @"obp"
+#define obstaclesPurchased @"op"
+#define obstacleRuinsPurchased @"orp"
+#define powerUpsPurchased @"pup"
+#define enemiesPurchased @"ep"
+#define doubleUpgradePointsPurchased @"dupp"
+
+#define obstacleBorderPrice 4
+#define obstaclesPrice 8
+#define obstacleRuinsPrice 500
+#define powerUpsPrice 50
+#define enemyPrice 150
+
+#define adShopTitle @"Remove iAds"
+#define obstacleBorderShopTitle @"Unlock Obstacle Border for 4 upgrade points"
+#define obstaclesShopTitle @"Unlock Obstacle Formations for 8 upgrade points"
+#define obstacleRuinsShopTitle @"Unlock Ruin-Style Obstacles for 500 upgrade points"
+#define powerUpsShopTitle @"Unlock Power ups for 50 upgrade points"
+#define enemiesShopTitle @"Unlock Enemies for 150 upgrade points"
+
+//********************************************* Options ********************************************
+
+#define snakeControlStyle @"snakeControlStyle"
+#define controlStyleBoth @"controlStyleBoth"
+#define controlStyleButtons @"controlStyleButtons"
+#define controlStyleSwipe @"controlStyleSwipe"
+
+#define soundEffectsToggle @"soundEffectsToggle"
+#define musicToggle @"musicToggle"
+
+//******************************************** Help Pages ******************************************
+
+#define helpMainMenu 1
+#define helpGameOptions 2
+#define helpGamePlay 3
+#define helpShop 4
+#define helpAchievements 5

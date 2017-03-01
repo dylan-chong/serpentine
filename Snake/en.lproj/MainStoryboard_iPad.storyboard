@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4514" systemVersion="13B35" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="border.png" id="ZJT-xs-VRJ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" image="Play.png" id="Vwg-e4-bhf">
+                                <rect key="frame" x="362" y="4" width="300" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AEV-TU-E0c" appends="YES" id="qPd-3U-FeG"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Shop.png" id="84o-43-51Q">
+                                <rect key="frame" x="362" y="614" width="300" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eMX-f5-P5G" appends="YES" id="Oi7-Tf-l4c"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="Options.png" id="aj6-fv-qI2">
+                                <rect key="frame" x="872" y="234" width="150" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bCN-x9-Sj2" appends="YES" id="QeY-QL-v7v"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="High score.png" id="WFb-lg-nnN">
+                                <rect key="frame" x="2" y="234" width="150" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="18U-TD-I33" appends="YES" id="nnr-UF-fwK"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo.png" id="fJS-6h-is4">
+                                <rect key="frame" x="212" y="314" width="610" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SnakePicture.png" id="hzw-uO-bhO">
+                                <rect key="frame" x="442" y="444" width="140" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="achievementTab" destination="WFb-lg-nnN" id="jZS-Rl-3Ql"/>
+                        <outlet property="border" destination="ZJT-xs-VRJ" id="gAY-Ol-u4o"/>
+                        <outlet property="optionsTab" destination="aj6-fv-qI2" id="8Sf-7g-IgS"/>
+                        <outlet property="playTab" destination="Vwg-e4-bhf" id="KW6-lL-JuK"/>
+                        <outlet property="shopTab" destination="84o-43-51Q" id="C67-o2-GQl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AEV-TU-E0c">
+                    <connections>
+                        <action selector="playTapTapped:" destination="2" id="V22-ef-w7H"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="18U-TD-I33">
+                    <connections>
+                        <action selector="achievementTapTapped:" destination="2" id="t8u-F4-kTK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eMX-f5-P5G">
+                    <connections>
+                        <action selector="shopTapTapped:" destination="2" id="KSv-wU-8ON"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bCN-x9-Sj2">
+                    <connections>
+                        <action selector="optionsTapTapped:" destination="2" id="7Wh-0g-oH6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="236" y="172"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="High score.png" width="150" height="300"/>
+        <image name="Logo.png" width="610" height="80"/>
+        <image name="Options.png" width="150" height="300"/>
+        <image name="Play.png" width="300" height="150"/>
+        <image name="Shop.png" width="300" height="150"/>
+        <image name="SnakePicture.png" width="140" height="20"/>
+        <image name="border.png" width="1024" height="768"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
